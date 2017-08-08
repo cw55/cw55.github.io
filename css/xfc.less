@@ -1,0 +1,282 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+}
+p,h4{
+	text-align: center;
+	margin: 0;
+}
+
+.navbar{
+	height: 60px;
+	background: #fff;
+	.container{
+		.navbar-header{
+			a{
+				display: inline-block;
+				img{
+					&:last-child{
+						display: none;
+					}
+				}
+				@media (max-width:992px){
+					img{
+						&:first-child{
+							display: none;
+						}
+						&:last-child{
+							display: block;
+						}
+					}
+				}
+			}
+			.navbar-toggle{
+				.icon-bar{
+					background: black;
+				}
+			}
+		}
+	}
+	.collapse{
+		line-height: 60px;
+		.nav{
+			
+			li{
+				padding: 0 5px;
+				&:first-child{
+					
+				}
+			}
+			a{
+				font-size: 18px;
+				line-height: 30px;
+			}
+			.dropdown{
+				position: relative;
+				top: -2px;
+				left: -5px;
+			}
+		}
+	}
+	@media (max-width:992px){
+		.collapse{
+			.nav{
+				background: #fff;
+				// width: 100%;
+				position: relative;
+				top: -5px;
+				right: 0;
+				padding-left: 100px;
+			}
+			width: 100%;
+			border-radius: 0 0 6px 6px;
+			
+		}
+		
+	}
+}
+.lunbo{
+	position: relative;
+	top: -18px;
+	background: url("../images/ppt_bg.jpg") center no-repeat;
+	
+	.smallheight{
+		height: 767px;
+		.carousel{
+			.carousel-inner{
+				width: 786px;
+				position: absolute;
+				left: 50%;
+				margin-left: -393px;
+				top: 287px;
+			}
+			.carousel-control{
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+		}
+		.left10{
+			.carousel-inner{
+				width: 786px;
+				position: absolute;
+				left: 50%;
+				margin-left: -393px;
+				top: 80px;
+				p{
+					span{
+						font-size: 24px;
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+	@media (max-width:800px){
+		.smallheight{
+			height: 200px;
+			overflow: hidden;
+			a{
+				display: none;
+			}
+		}
+	}
+}
+.elseif{
+	position: relative;
+	.fuwu{
+		margin-top: 60px;
+		.container{
+			color: #00B3FD;
+			.row{
+				
+				h2{
+					text-align: center;
+				}
+				h4{
+					font-weight: bold;
+				}
+				hr{
+					margin: 0 auto;
+					width: 100px;
+					border-top: 2px solid #00B3FD;
+					margin-bottom: 60px;
+				}
+				.thumbnail{
+					border:none;
+				}
+				@media (min-width:1200px){
+					.col-sm-6{
+						margin: 0 14px;
+					}
+					.thumbnail{
+						width: 120%;
+						padding: 10px;
+					}
+				}
+				@media (min-width:992px) and (max-width:1200px){
+					.col-sm-6{
+						margin: 0 14px;
+					}
+					.thumbnail{
+						width: 140%;
+						padding: 10px;
+						font-size: 12px;
+					}
+				}
+				
+			}
+		}
+	}
+	.chanpin{
+		margin-top: 60px;
+		background: #eee;
+		.container{
+			color: #00B3FD;
+			.row{
+				.thumbnail{
+					.caption{
+						span{
+							i{
+								color:#ccc;
+							}
+						}
+					}
+				}
+				h2{
+					text-align: center;
+				}
+				hr{
+					margin: 0 auto;
+					width: 100px;
+					border-top: 2px solid #00B3FD;
+					margin-bottom: 60px;
+				}
+			}
+		}
+	}
+	.kehu{
+		.container{
+			color: #00B3FD;
+			.row{
+				.thumbnail{
+					background: #eee;
+				}
+				h2{
+					text-align: center;
+				}
+				hr{
+					margin: 0 auto;
+					width: 100px;
+					border-top: 2px solid #00B3FD;
+					margin-bottom: 60px;
+				}
+			}
+		}
+	}
+	.aboutus{
+		.about1{
+			margin-top: 60px;
+			height: 640px;
+			background: url("../images/about_bg.jpg") center ;
+			.container{
+				color: #fff;
+				.row{
+					h2{
+						text-align: center;
+						color: #fff;
+
+					}
+					hr{
+						margin: 0 auto;
+						width: 100px;
+						border-top: 2px solid #00B3FD;
+						margin-bottom: 60px;
+						color: #fff;
+					}
+					p{
+						color: #fff;
+						margin-top: 5px;
+					}
+				}
+			}
+			
+		}
+	}
+	.dianhua{
+		.dianhua1{
+			background: url("../images/content_bg.png") center no-repeat rgb(98,97,96);
+			.container{
+				.row{
+					span{
+						color:#fff;
+					}
+				}
+				@media (min-width:992px){
+					.row{
+						padding: 20px;
+					}	
+				}
+				@media (max-width:768px){
+					.row{
+						padding: 30px;
+					}	
+				}
+			}
+		}
+	}
+	.foot1{
+		.foot2{
+			background: #eee;
+			.foot3{
+				p{
+					padding: 26px;
+					span{
+						color:#ccc;
+					}
+				}
+			}
+		}
+	}
+}

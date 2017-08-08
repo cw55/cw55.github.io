@@ -1,12 +1,339 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="css/index.css">
-    </head>
-    <body>
-    	<h1>个人主页</h1>
-    	<img src="imgs/zhuye_bg.jpg" alt="">
-    	<p>你好！</p>
+<html lang="zh-CN">
+  	<head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+	    <title>小风车</title>
+
+	    <!-- Bootstrap -->
+	    <link href="css/bootstrap.css" rel="stylesheet">
+
+	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	    <!--[if lt IE 9]>
+	      <script src="js/html5shiv.min.js"></script>
+	      <script src="js/respond.min.js"></script>
+	    <![endif]-->
+	    <style>
+			/* div{border:1px solid black;} */
+	    </style>
+	    <link rel="stylesheet" href="css/xfc.css">
+	</head>
+	<body  data-spy="scroll" data-target="#navbar-example" data-offset="0" >
+	<p id="lunbo"></p>
+	<nav id="navbar-example" class="navbar navbar-default navbar-static" role="navigation">
+
+		<div class="navbar navbar-fixed-top">
+			<div class="container">
+				<!-- 导航条头部 -->
+				<div class="navbar-header navbar-left">
+					<!-- logo/商标 -->
+					<!-- <div class="item"> -->
+						<a href="#">
+							<img src="images/logo.png" class="img-responsive">
+							<img src="images/logo_min.png" class="img-responsive">
+						</a>
+					<!-- </div> -->
+					
+					<!-- 折叠菜单触发按钮 -->
+					<button type="button" data-toggle="collapse" class="navbar-toggle collapsed navbar-danger" data-target="#box">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<!-- 导航条折叠 -->
+				<div class="collapse navbar-collapse navbar-rights" id="box">
+					<ul class="nav navbar-nav navbar-right nav-tabs" role="tablist">
+						<li><a href="#lunbo"><span class="glyphicon glyphicon-home"></span>网站首页</a></li>
+						<li><a href="#fuwu">服务与支持</a></li>
+						<li><a href="#chanpin">产品展示</a></li>
+						<li><a href="#kehu">客户</a></li>
+						<li><a href="#aboutus">关于我们</a></li>
+						<li class="dropdown">
+							<img src="images/logo_msg.png" class="btn img-responsive" data-toggle="dropdown">
+							
+							<ul class="dropdown-menu">
+								<img src="images/Quickmark.png" class="img-responsive">
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+		
+		<div class="container-fluid lunbo">
+			<div class="smallheight">
+				<div class="carousel slide" data-ride="carousel" data-interval="2000" id="myslider">
+					<div class="carousel-inner">
+						<div class="item active">
+							<img src="images/ppt1.jpg" class="img-responsive">
+						</div>
+						<div class="item">
+							<img src="images/ppt3.jpg" class="img-responsive">
+						</div>
+					</div>
+				</div>
+				<div class="carousel slide left10" data-ride="carousel" data-interval="2000" id="myslider">
+					<div class="carousel-inner">
+						<div class="item active">
+							<p><span>自主软件的研发、大数据、金融服务、IT服务培训</span></p>
+						</div>
+						<div class="item">
+							<p><span>成都小风车，来一起打天下</span></p>
+						</div>
+					</div>
+				</div>
+				<!-- 两个按钮表示左右按钮控件 -->
+				<a href="#myslider" class="carousel-control left" data-slide="prve">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+				</a>
+				<a href="#myslider" class="carousel-control right" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+				</a>
+			</div>
+		<p  id="fuwu"></p>
+		</div>
+		<div class="elseif">
+		<div class="fuwu">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<h2>服务与支持</h2>
+						<hr>
+					</div>
+				</div>
+				<div class="row">
+				  	<div class="col-sm-6 col-md-2 col-xs-12 col-md-offset-1">
+				    	<div class="thumbnail">
+					      	<img src="images/serve1.png">
+					      	<div class="caption">
+					        	<h4>系统集成</h4>
+					        	<p>低成本的，高效率的</p>
+					        	<p>性能均匀的</p>
+					        	<p>可扩充性、可维护的</p>
+					      	</div>
+				    	</div>
+				  </div>
+				  <div class="col-sm-6 col-md-2 col-xs-12">
+				    	<div class="thumbnail">
+					      	<img src="images/serve2.png">
+					      	<div class="caption">
+					        	<h4>APP应用开发</h4>
+					        	<p>iOS、Andriod</p>
+					        	<p>抢占商机、清新美观</p>
+					        	<p>体验感强、成本低廉</p>
+					      	</div>
+				    	</div>
+				  </div>
+				  <div class="col-sm-6 col-md-2 col-xs-12">
+				    	<div class="thumbnail">
+					      	<img src="images/serve4.png">
+					      	<div class="caption">
+					        	<h4>网站开发</h4>
+					        	<p>HTML5+CSS3+JAVA(PHP)</p>
+					        	<p>美观大方、完美体验</p>
+					        	<p>安全性能高</p>
+					      	</div>
+				    	</div>
+				  </div>
+				  <div class="col-sm-6 col-md-2 col-xs-12">
+				    	<div class="thumbnail">
+					      	<img src="images/serve4.png">
+					      	<div class="caption">
+					        	<h4>企业应用</h4>
+					        	<p>功能全面、界面美观</p>
+					        	<p>安全性能高</p>
+					        	<p>无缝对接后期服务</p>
+					      	</div>
+				    	</div>
+				  </div>
+				  <div class="col-sm-6 col-md-2 col-xs-12">
+				    	<div class="thumbnail">
+					      	<img src="images/serve5.png">
+					      	<div class="caption">
+					        	<h4>CRM</h4>
+					        	<p>客户资源、客户关系</p>
+					        	<p>客户数据</p>
+					        	<p>客户关怀等管理维护</p>
+					      	</div>
+				    	</div>
+				  </div>
+				</div>
+			</div>
+		</div>
+		<p id="chanpin"></p>
+		<div class="chanpin">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<h2>产品展示</h2>
+						<hr>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-sm-6 col-xs-12">
+				    	<div class="thumbnail">
+					      	<img src="images/product_app1.png">
+					      	<div class="caption">
+					        	<h4>爱鲜生</h4>
+					        	<p><span><i>电商APP应用开发</i></span></p>
+					      	</div>
+				    	</div>
+				  	</div>
+				  	<div class="col-md-4 col-sm-6 col-xs-12">
+				    	<div class="thumbnail">
+					      	<img src="images/product_com4.jpg">
+					      	<div class="caption">
+					        	<h4>温江规划局</h4>
+					        	<p><span><i>政府应用开发</i></span></p>
+					      	</div>
+				    	</div>
+				  	</div>
+				  	<div class="col-md-4 col-sm-6 col-xs-12">
+				    	<div class="thumbnail">
+					      	<img src="images/product_com2.png">
+					      	<div class="caption">
+					        	<h4>销售助手管理平台</h4>
+					        	<p><span><i>运营商应用开发</i></span></p>
+					      	</div>
+				    	</div>
+				  	</div>
+				  	<div class="col-md-4 col-sm-6 col-xs-12">
+				    	<div class="thumbnail">
+					      	<img src="images/product_com5.jpg">
+					      	<div class="caption">
+					        	<h4>雅安科技院</h4>
+					        	<p><span><i>网站/微信/呼叫中心建设</i></span></p>
+					      	</div>
+				    	</div>
+				  	</div>
+				  	<div class="col-md-4 col-sm-6 col-xs-12">
+				    	<div class="thumbnail">
+					      	<img src="images/product_web3.png">
+					      	<div class="caption">
+					        	<h4>中丹环保管家系统</h4>
+					        	<p><span><i>一站式环保综合服务平台</i></span></p>
+					      	</div>
+				    	</div>
+				  	</div>
+				  	<div class="col-md-4 col-sm-6 col-xs-12">
+				    	<div class="thumbnail">
+					      	<img src="images/product_we1.png">
+					      	<div class="caption">
+					        	<h4>国网乐山人资互动平台</h4>
+					        	<p><span><i>微信公众号</i></span></p>
+					      	</div>
+				    	</div>
+				  	</div>
+				</div>
+			</div>
+		</div>
+		<p id="kehu"></p>
+		<br><br><br>
+		<div class="kehu">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<h2>我们的客户</h2>
+						<hr>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-xs-12">
+				    	<div class="thumbnail">
+					      	<img src="images/client2.png">
+				    	</div>
+				  	</div>
+				  	<div class="col-md-3 col-sm-6 col-xs-12">
+				    	<div class="thumbnail">
+					      	<img src="images/client5.png">
+				    	</div>
+				  	</div>
+				  	<div class="col-md-3 col-sm-6 col-xs-12">
+				    	<div class="thumbnail">
+					      	<img src="images/client6.png">
+				    	</div>
+				  	</div>
+				  	<div class="col-md-3 col-sm-6 col-xs-12">
+				    	<div class="thumbnail">
+					      	<img src="images/client7.png">
+				    	</div>
+				  	</div>
+				</div>
+			</div>
+		</div>
+		<p id="aboutus"></p>
+		<div class="aboutus">
+			<div class="container-fluid about1">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12">
+							<h2>关于我们</h2>
+							<hr>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<p>以客户需求为导向，以客户价值为目标，以客户满意为标准</p>
+							<p>坚持变革，倡导创新，持续成长。快速反应，快速决策，快速行动</p>
+							<p>企业与员工共同成长，专注主营业务。</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="dianhua">
+			<div class="container-fluid dianhua1">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 col-sm-6 col-xs-12">
+					    	<p><img src="images/content_tel.png"></p>
+					    	<p><span>电话:028-67871837</span></p>
+					  	</div>
+					  	<div class="col-md-4 col-sm-6 col-xs-12">
+					    	<p><img src="images/content_ad.png"></p>
+						    <p><span>地址:成都市高新区菁蓉国际广场4栋5楼A15</span></p>
+					  	</div>
+					  	<div class="col-md-4 col-sm-6 col-xs-12">
+					    	<p><img src="images/content_em.png"></p>
+						    <p><span>邮箱:kefu@xfc123.com</span></p>
+					  	</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="foot1">
+			<div class="container-fluid foot2">
+				<div class="container foot3">
+					<p><span>Copyright &copy; 2017 Xiaofengche Inc.保留所有权利。 &nbsp;蜀ICP备15020376号-1</span></p>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+	    <script src="js/jquery.min.js"></script>
+	    <script src="js/bootstrap.js"></script>
+	    <script>
+	      /* 载入 bootlint.js 文件 */
+	      (function(){
+	        var s =document.createElement("script");
+	        s.onload = function(){
+	          bootlint.showLintReportForCurrentDocument([]);
+	        };
+	        s.src="js/bootlint.js";
+	        document.body.appendChild(s);
+	   //      removeSection = function(e) {
+	   //      	$(e).parents(".section").remove();
+	   //      	$('[data-spy="scroll"]').each(function () {
+				//   	var $spy = $(this).scrollspy('refresh')
+				// });
+	   //      }
+	   //      $('.elseif').scrollspy({ target: '#navbar-example' })
+	        // $("#navbar-example").scrollspy();
+	      })();
+	    </script>
     </body>
 </html>

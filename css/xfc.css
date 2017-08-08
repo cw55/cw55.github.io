@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "微软雅黑";
+}
+p,
+h4 {
+  text-align: center;
+  margin: 0;
+}
+.navbar {
+  height: 60px;
+  background: #fff;
+}
+.navbar .container .navbar-header a {
+  display: inline-block;
+}
+.navbar .container .navbar-header a img:last-child {
+  display: none;
+}
+@media (max-width: 992px) {
+  .navbar .container .navbar-header a img:first-child {
+    display: none;
+  }
+  .navbar .container .navbar-header a img:last-child {
+    display: block;
+  }
+}
+.navbar .container .navbar-header .navbar-toggle .icon-bar {
+  background: black;
+}
+.navbar .collapse {
+  line-height: 60px;
+}
+.navbar .collapse .nav li {
+  padding: 0 5px;
+}
+.navbar .collapse .nav a {
+  font-size: 18px;
+  line-height: 30px;
+}
+.navbar .collapse .nav .dropdown {
+  position: relative;
+  top: -2px;
+  left: -5px;
+}
+@media (max-width: 992px) {
+  .navbar .collapse {
+    width: 100%;
+    border-radius: 0 0 6px 6px;
+  }
+  .navbar .collapse .nav {
+    background: #fff;
+    position: relative;
+    top: -5px;
+    right: 0;
+    padding-left: 100px;
+  }
+}
+.lunbo {
+  position: relative;
+  top: -18px;
+  background: url("../images/ppt_bg.jpg") center no-repeat;
+}
+.lunbo .smallheight {
+  height: 767px;
+}
+.lunbo .smallheight .carousel .carousel-inner {
+  width: 786px;
+  position: absolute;
+  left: 50%;
+  margin-left: -393px;
+  top: 287px;
+}
+.lunbo .smallheight .carousel .carousel-control {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.lunbo .smallheight .left10 .carousel-inner {
+  width: 786px;
+  position: absolute;
+  left: 50%;
+  margin-left: -393px;
+  top: 80px;
+}
+.lunbo .smallheight .left10 .carousel-inner p span {
+  font-size: 24px;
+  color: #fff;
+}
+@media (max-width: 800px) {
+  .lunbo .smallheight {
+    height: 200px;
+    overflow: hidden;
+  }
+  .lunbo .smallheight a {
+    display: none;
+  }
+}
+.elseif {
+  position: relative;
+}
+.elseif .fuwu {
+  margin-top: 60px;
+}
+.elseif .fuwu .container {
+  color: #00B3FD;
+}
+.elseif .fuwu .container .row h2 {
+  text-align: center;
+}
+.elseif .fuwu .container .row h4 {
+  font-weight: bold;
+}
+.elseif .fuwu .container .row hr {
+  margin: 0 auto;
+  width: 100px;
+  border-top: 2px solid #00B3FD;
+  margin-bottom: 60px;
+}
+.elseif .fuwu .container .row .thumbnail {
+  border: none;
+}
+@media (min-width: 1200px) {
+  .elseif .fuwu .container .row .col-sm-6 {
+    margin: 0 14px;
+  }
+  .elseif .fuwu .container .row .thumbnail {
+    width: 120%;
+    padding: 10px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .elseif .fuwu .container .row .col-sm-6 {
+    margin: 0 14px;
+  }
+  .elseif .fuwu .container .row .thumbnail {
+    width: 140%;
+    padding: 10px;
+    font-size: 12px;
+  }
+}
+.elseif .chanpin {
+  margin-top: 60px;
+  background: #eee;
+}
+.elseif .chanpin .container {
+  color: #00B3FD;
+}
+.elseif .chanpin .container .row .thumbnail .caption span i {
+  color: #ccc;
+}
+.elseif .chanpin .container .row h2 {
+  text-align: center;
+}
+.elseif .chanpin .container .row hr {
+  margin: 0 auto;
+  width: 100px;
+  border-top: 2px solid #00B3FD;
+  margin-bottom: 60px;
+}
+.elseif .kehu .container {
+  color: #00B3FD;
+}
+.elseif .kehu .container .row .thumbnail {
+  background: #eee;
+}
+.elseif .kehu .container .row h2 {
+  text-align: center;
+}
+.elseif .kehu .container .row hr {
+  margin: 0 auto;
+  width: 100px;
+  border-top: 2px solid #00B3FD;
+  margin-bottom: 60px;
+}
+.elseif .aboutus .about1 {
+  margin-top: 60px;
+  height: 640px;
+  background: url("../images/about_bg.jpg") center;
+}
+.elseif .aboutus .about1 .container {
+  color: #fff;
+}
+.elseif .aboutus .about1 .container .row h2 {
+  text-align: center;
+  color: #fff;
+}
+.elseif .aboutus .about1 .container .row hr {
+  margin: 0 auto;
+  width: 100px;
+  border-top: 2px solid #00B3FD;
+  margin-bottom: 60px;
+  color: #fff;
+}
+.elseif .aboutus .about1 .container .row p {
+  color: #fff;
+  margin-top: 5px;
+}
+.elseif .dianhua .dianhua1 {
+  background: url("../images/content_bg.png") center no-repeat #626160;
+}
+.elseif .dianhua .dianhua1 .container .row span {
+  color: #fff;
+}
+@media (min-width: 992px) {
+  .elseif .dianhua .dianhua1 .container .row {
+    padding: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .elseif .dianhua .dianhua1 .container .row {
+    padding: 30px;
+  }
+}
+.elseif .foot1 .foot2 {
+  background: #eee;
+}
+.elseif .foot1 .foot2 .foot3 p {
+  padding: 26px;
+}
+.elseif .foot1 .foot2 .foot3 p span {
+  color: #ccc;
+}
