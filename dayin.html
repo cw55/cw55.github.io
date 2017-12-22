@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>急速打印</title>
+</head>
+<body>
+    <!--startprint-->
+    <div id="d_box">
+
+    </div>
+    <!--endprint-->
+</body>
+<script>
+    //采用正则表达式获取地址栏参数
+    // function GetQueryString(name){
+    //     var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+    //     var r = window.location.search.substr(1).match(reg);
+    //     if(r!=null)return  unescape(r[2]); return null;
+    // }
+    //能获取中文
+    function getUrlParam(key) {
+        // 获取参数
+        var url = window.location.search;
+        // 正则筛选地址栏
+        var reg = new RegExp("(^|&)" + key + "=([^&]*)(&|$)");
+        // 匹配目标参数
+        var result = url.substr(1).match(reg);
+        //返回参数值
+        return result ? decodeURIComponent(result[2]) : null;
+    }
+    // var form1 = GetQueryString("form1")
+    // var form2 = GetQueryString("form2")
+    // var url = GetQueryString("url")
+    var form1 = getUrlParam("form1")
+    var form2 = getUrlParam("form2")
+    var url = getUrlParam("url")
+    // console.log(form1)
+    // console.log(form2)
+    // console.log(url)
+    //讲获取的url填充到页面
+    document.getElementById("d_box").innerHTML = url;
+    document.getElementById("form1").innerHTML = ""
+    document.getElementById("form2").innerHTML = ""
+    //添加 option
+    var option = document.createElement("option");
+    //设置 select 属性，如 id
+    option.setAttribute("id", "form1");
+    option.innerHTML = form1;
+    document.getElementById("form1").appendChild(option);
+    //添加 option
+    var option1 = document.createElement("option");
+    //设置 select 属性，如 id
+    option1.setAttribute("id", "form2");
+    option1.innerHTML = form2;
+    document.getElementById("form2").appendChild(option1);
+
+    function doPrint() {  
+        bdhtml=window.document.body.innerHTML;  
+        sprnstr="<!--startprint-->";  
+        eprnstr="<!--endprint-->";  
+        prnhtml=bdhtml.substr(bdhtml.indexOf(sprnstr)+17);  
+        prnhtml=prnhtml.substring(0,prnhtml.indexOf(eprnstr));  
+        window.document.body.innerHTML=prnhtml; 
+        window.print();
+        
+    } 
+    doPrint()
+    window.history.back(-1);
+</script>
+</html>
