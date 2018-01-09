@@ -70,8 +70,9 @@
         // console.log(form1)
         // console.log(form2)
         // console.log(box_html)
-        console.log("dayin.html?form1="+form1+"&form2="+form2+"&url="+box_html+"");
-        window.location.href = "dayin.html?form1="+form1+"&form2="+form2+"&url="+box_html+"";
+        var my_url = escape(form1+"&form2="+form2+"&url="+box_html+"");
+        console.log(my_url)
+        window.location.href = "dayin.html?form1="+my_url;
     })
 </script>
 </html>

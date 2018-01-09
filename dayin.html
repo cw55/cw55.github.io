@@ -23,7 +23,8 @@
     //能获取中文
     function getUrlParam(key) {
         // 获取参数
-        var url = window.location.search;
+        var url = unescape(window.location.search);
+        console.log(url)
         // 正则筛选地址栏
         var reg = new RegExp("(^|&)" + key + "=([^&]*)(&|$)");
         // 匹配目标参数
