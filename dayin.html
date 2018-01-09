@@ -37,9 +37,9 @@
     var form1 = getUrlParam("form1")
     var form2 = getUrlParam("form2")
     var url = getUrlParam("url")
-    // console.log(form1)
-    // console.log(form2)
-    // console.log(url)
+    console.log(form1)
+    console.log(form2)
+    console.log(url)
     //讲获取的url填充到页面
     document.getElementById("d_box").innerHTML = url;
     document.getElementById("form1").innerHTML = ""
@@ -72,7 +72,7 @@
     function huiqu(){
         window.history.back(-1)
     }
-    setTimeout(huiqu,3000);
+    setTimeout(huiqu,30);
      
 </script>
 </html>
