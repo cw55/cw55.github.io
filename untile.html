@@ -28,18 +28,21 @@
 <script src="./js/jquery-1.9.1.min.js"></script>
 <script>
     var myDate = new Date();
+    console.log(myDate)
     var year_1 = myDate.getFullYear();        //获取当前年份
     var mon_1 = myDate.getMonth();       //获取当前月份(0-11,0代表1月)
     var shuzu_arr = [];
+    mon_1 = mon_1+1
+    console.log(year_1)
     for(var r=0;r<20;r++){
         if(parseInt(mon_1)-1<0){
             year_1 = year_1-1;
             mon_1 = 12;
         }else{
-            if(mon_1<10){
-                shuzu_arr.push(year_1+"-0"+parseInt(mon_1))
+            if(mon_1>=10){
+                shuzu_arr.push(parseInt(year_1)+"-"+parseInt(mon_1))
             }else{
-                shuzu_arr.push(year_1+"-"+parseInt(mon_1))
+                shuzu_arr.push(parseInt(year_1)+"-0"+parseInt(mon_1))
             }
             mon_1 = mon_1-1;
         }
