@@ -32,7 +32,7 @@
     var mon_1 = myDate.getMonth();       //获取当前月份(0-11,0代表1月)
     var shuzu_arr = [];
     for(var r=0;r<20;r++){
-        if(parseInt(mon_1)-1<1){
+        if(parseInt(mon_1)-1<0){
             year_1 = year_1-1;
             mon_1 = 12;
         }else{
