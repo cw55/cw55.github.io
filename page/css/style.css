@@ -1,0 +1,97 @@
+body{
+    padding: 20px;
+}
+.game{
+    box-sizing: border-box;
+    width: 1194px;
+    height: 709px;
+    margin: 0 auto;
+    position: relative;
+    padding: 20px;
+    border: 2px dashed blue;
+    border-radius: 10px;
+}
+.all_bg {
+    display: inline-block;
+    width: 800px;
+    height: 600px;
+    position: relative;
+}
+.game h2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 340px;
+    font-size: 26px;
+    text-align: left;
+}
+.all_bg .control{
+    display: inline-block;
+    width: 800px;
+    height: 600px;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 10;
+}
+.all_bg .btn{
+    width: 200px;
+    height: 60px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin: -15px 0 0 -100px;
+    background-color: transparent;
+    line-height: 60px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 orange;
+}
+.all_bg .allCanvas {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    margin: 0;
+    z-index: 10;
+}
+
+#canvas1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#canvas2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.introduction{
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 0 0 0 20px;
+    width: 350px;
+    position: absolute;
+    top: 77px;
+}
+.introduction p{
+    line-height: 26px;
+    text-indent:25px;
+}
+.introduction h3{
+    margin: 0 auto 15px auto;
+    text-align: center;
+    font-size: 18px;
+}
+.introduction ul{
+    margin-left: -20px;
+}
+.introduction ul li {
+    line-height: 26px;
+    font-size: 16px;
+    text-align: left;
+}
