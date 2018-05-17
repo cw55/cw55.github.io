@@ -1,6 +1,12 @@
 a {
   text-decoration: none !important;
 }
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
 body {
   background: "#eee";
 }
@@ -33,7 +39,7 @@ body .greenbtn {
   padding: 6px 25px;
   border: 2px solid #3fb34f !important;
   border-radius: 10px;
-  transition: all 2s;
+  transition: color 2s,border 2s;
 }
 body .greenbtn:hover {
   color: #49abd9 !important;
@@ -46,7 +52,7 @@ body .blue {
   margin-bottom: 13px;
   text-decoration: none !important;
   border-radius: 10px;
-  transition: all 2s;
+  transition: color 2s,border 2s;
 }
 body .blue:hover {
   color: #3fb34f !important;
@@ -113,7 +119,8 @@ body .alert {
   border-radius: 0px;
 }
 body .item a {
-  font-weight: 400;
+  font-weight: 500;
+  float: left;
 }
 body .item .item-type-border {
   margin-right: 40px;
@@ -127,4 +134,27 @@ body .item .item-type-border::before {
   display: inline-block;
   top: -15px;
   margin: 0 15px;
+}
+body .item .learn-more {
+  color: #fff;
+  font-weight: 500;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: inline-block;
+  max-width: 175px;
+  width: 100%;
+  text-align: center;
+  border-radius: 25px;
+  border: solid 2px #fff;
+  float: right;
+  line-height: 23px;
+}
+body footer {
+  background-color: #333;
+  font-size: 12px;
+  color: white;
+  padding: 25px 0;
+}
+body footer .links li {
+  display: inline-block;
 }
