@@ -1,3 +1,6 @@
+a {
+  text-decoration: none !important;
+}
 body {
   background: "#eee";
 }
@@ -12,19 +15,19 @@ body .navbar {
   margin-bottom: 0;
   border-radius: 0;
 }
-.a_mar_top {
+body .a_mar_top {
   margin-top: 100px;
 }
-.a_right {
+body .a_right {
   float: right;
 }
-.valueprops {
+body .valueprops {
   color: #fff;
 }
-.valuepropsheading {
+body .valuepropsheading {
   padding-top: 50px;
 }
-.greenbtn {
+body .greenbtn {
   color: #3fb34f !important;
   text-decoration: none !important;
   padding: 6px 25px;
@@ -32,11 +35,11 @@ body .navbar {
   border-radius: 10px;
   transition: all 2s;
 }
-.greenbtn:hover {
+body .greenbtn:hover {
   color: #49abd9 !important;
   border: 2px solid #49abd9 !important;
 }
-.blue {
+body .blue {
   color: #49abd9 !important;
   border: 2px solid #49abd9 !important;
   display: inline-block;
@@ -45,29 +48,29 @@ body .navbar {
   border-radius: 10px;
   transition: all 2s;
 }
-.blue:hover {
+body .blue:hover {
   color: #3fb34f !important;
   border: 2px solid #3fb34f !important;
 }
-.bgimage {
+body .bgimage {
   padding-bottom: 36px !important;
 }
 @media (min-width: 992px) {
-  .bgimage.enabled-news-ticker {
+  body .bgimage.enabled-news-ticker {
     padding-bottom: 130px;
   }
 }
-.countdown-bar {
+body .countdown-bar {
   background: url(../images/countdown-bg-1920x222.jpg);
   text-align: center;
   padding: 10px 20px 5px 20px;
 }
-.countdown-bar .main-text {
+body .countdown-bar .main-text {
   color: #fff !important;
   font-weight: bold;
   font-size: 22px;
 }
-.countdown-bar .timer-container div {
+body .countdown-bar .timer-container div {
   display: inline-block;
   background: rgba(20, 30, 36, 0.85);
   border-radius: 10px 10px;
@@ -76,33 +79,52 @@ body .navbar {
   /* width: 72px; */
   box-sizing: border-box;
 }
-.countdown-bar .timer-container div .number {
+body .countdown-bar .timer-container div .number {
   font-size: 30px;
   line-height: 32px;
   font-weight: bold;
 }
-.countdown-bar .sub-text {
+body .countdown-bar .sub-text {
   margin-top: 10px !important;
   font-size: 18px;
   color: #fff !important;
   font-weight: bold;
 }
-.news-ticker {
+body .news-ticker {
   background: #1b6bb1;
   color: #fff;
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.news-ticker .container {
+body .news-ticker .container {
   max-width: 1175px;
   width: auto;
   padding-right: 0;
 }
-.news-ticker .container a {
+body .news-ticker .container a {
   color: #fff;
   font-size: 18px;
 }
-.alert-success {
+body .alert-success {
   margin-bottom: 0;
   border: none;
+}
+body .alert {
+  border-radius: 0px;
+}
+body .item a {
+  font-weight: 400;
+}
+body .item .item-type-border {
+  margin-right: 40px;
+}
+body .item .item-type-border::before {
+  content: " ";
+  width: 1px;
+  height: 45px;
+  background: #fff;
+  position: absolute;
+  display: inline-block;
+  top: -15px;
+  margin: 0 15px;
 }

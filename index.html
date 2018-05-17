@@ -10,6 +10,7 @@
   <!-- Bootstrap -->
   <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="./css/style.css" rel="stylesheet">
+  <link href="./css/bootstrapValidator.css" rel="stylesheet">
 
   <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
   <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
@@ -141,10 +142,10 @@
             </a>
             <ul class="dropdown-menu">
               <li>
-                <a href="#">登录</a>
+                <a href="#" data-toggle="modal" data-target="#myModal">登录</a>
               </li>
               <li>
-                <a href="#">注册</a>
+                <a href="#" data-toggle="modal" data-target="#myModal2">注册</a>
               </li>
               <li>
                 <a href="#">游客试用</a>
@@ -164,6 +165,91 @@
       <!--/.nav-collapse -->
     </div>
   </nav>
+  <!-- 模态框 -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">欢迎登录</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">name</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">密码</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <!-- <div class="form-group">
+              <label for="exampleInputFile">File input</label>
+              <input type="file" id="exampleInputFile">
+              <p class="help-block">Example block-level help text here.</p>
+            </div> -->
+            <!-- <div class="checkbox">
+              <label>
+                <input type="checkbox"> Check me out
+              </label>
+            </div> -->
+            <button type="submit" class="btn btn-default">登录</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">返回首页</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabe2">欢迎注册</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail2">name</label>
+              <input type="text" class="form-control" name="name2" id="name2" placeholder="Name">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail2">邮箱/手机号</label>
+              <input type="email" class="form-control" name="exampleInputEmail2" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword2">密码</label>
+              <input type="password" class="form-control" name="exampleInputPassword2" placeholder="Password">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword2">确认密码</label>
+              <input type="password" class="form-control" name="exampleInputPassword2_again" placeholder="Again Password">
+            </div>
+            <!-- <div class="form-group">
+              <label for="exampleInputFile">File input</label>
+              <input type="file" id="exampleInputFile">
+              <p class="help-block">Example block-level help text here.</p>
+            </div> -->
+            <!-- <div class="checkbox">
+              <label>
+                <input type="checkbox"> Check me out
+              </label>
+            </div> -->
+            <button type="submit" class="btn btn-default">注册并登录</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">返回首页</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 模态框 end -->
+
   <!-- 广告位 -->
   <section id="jumbotron">
     <div class="jumbotron">
@@ -176,7 +262,7 @@
                 <div class="row text-center">
                   <div class="col-xs-12 valuepropsheading ">
                     <h1>从技术角度处理问题增加效率</h1>
-                    <p>让我们做一个伟大web前端工程师，加油！</p>
+                    <p>让我们做一个伟大的web前端工程师，加油！</p>
                   </div>
                 </div>
                 <div class="row text-center">
@@ -186,7 +272,8 @@
                     <!--<p></p>-->
                     <a href="http://121.43.192.253:8016" target="_blank" role="button" class="greenbtn blue">跳转招聘平台</a>
                     <div>
-                      <a href="https://www.baidu.com/s?wd=%E4%BC%A0%E7%BB%9FPC%E7%AB%AF%E9%A1%B5%E9%9D%A2&rsv_spt=1&rsv_iqid=0xcf01ccaf000259db&issp=1&f=8&rsv_bp=0&rsv_idx=2&ie=utf-8&tn=baiduhome_pg&rsv_enter=1&rsv_sug3=2&rsv_n=2" target="_blank" role="button" class="greenbtn">跳转百度查询</a>
+                      <a href="https://www.baidu.com/s?wd=%E4%BC%A0%E7%BB%9FPC%E7%AB%AF%E9%A1%B5%E9%9D%A2&rsv_spt=1&rsv_iqid=0xcf01ccaf000259db&issp=1&f=8&rsv_bp=0&rsv_idx=2&ie=utf-8&tn=baiduhome_pg&rsv_enter=1&rsv_sug3=2&rsv_n=2"
+                        target="_blank" role="button" class="greenbtn">跳转百度查询</a>
                     </div>
                   </div>
                   <div class="col-xs-12 col-sm-4 blurb-cta">
@@ -244,8 +331,7 @@
                         <a href="https://juejin.im/entry/5afb9483f265da0b84559865" target="_blank">
                           <span class="item-type">其他</span>
                           <span class="item-type-border"></span> ES6 札记：函数 </a>
-                        <a href="#"
-                          class="learn-more">查看更多</a>
+                        <a href="#" class="learn-more">查看更多</a>
                       </h5>
                     </div>
                   </div>
@@ -258,9 +344,97 @@
       </div>
     </div>
   </section>
+
+  <div id="content" class="page-wrap">
+    <div class="container content-wrapper">
+      <div class="row">
+        <div id="primary" class="fp-content-area">
+          <main id="main" class="site-main" role="main">
+
+            <div class="entry-content">
+              <div id="pl-334" class="panel-layout">
+                <div id="pg-334-0" class="panel-grid panel-has-style">
+                  <div class="siteorigin-panels-stretch panel-row-style panel-row-style-for-334-0" style="border-bottom: 1px solid #e0e0e0;padding: 100px 0; "
+                    data-stretch-type="full" data-overlay="true">
+                    <div id="pgc-334-0-0" class="panel-grid-cell">
+                      <div id="panel-334-0-0-0" class="so-panel widget widget_sydney_services_type_a sydney_services_widget panel-first-child panel-last-child"
+                        data-index="0">
+                        <div style="text-align: left;" data-title-color="#443f3f" data-headings-color="#443f3f" class="panel-widget-style panel-widget-style-for-334-0-0-0">
+                          <h3 class="widget-title">Our approach</h3>
+                          <div class="service col-md-4">
+                            <div class="roll-icon-box">
+
+                              <div class="icon">
+                                <i class="fa fa-camera-retro"></i>
+                              </div>
+                              <div class="content">
+                                <h3>
+                                  Technology </h3>
+
+                                <p>We use our iOs mobile app with our in-house tech to connect you to the nearest supplier of
+                                  services. We are the ‘uber’ for waste. No more flicking through google or worrying if the
+                                  guy picking up your goods is licensed.</p>
+                              </div>
+                              <!--.info-->
+                            </div>
+                          </div>
+                          <div class="service col-md-4">
+                            <div class="roll-icon-box">
+
+                              <div class="icon">
+                                <i class="fa fa-codepen"></i>
+                              </div>
+                              <div class="content">
+                                <h3>
+                                  Efficiency </h3>
+
+                                <p>We offer a guaranteed 24 hour delivery and can often come the same day. Working? schedule
+                                  a pick up for that old fridge by selecting a time and date suitable for you. No more waiting
+                                  around
+                                </p>
+                              </div>
+                              <!--.info-->
+                            </div>
+                          </div>
+                          <div class="service col-md-4">
+                            <div class="roll-icon-box">
+
+                              <div class="icon">
+                                <a href="http://google.com">
+                                  <i class="fa fa-desktop"></i>
+                                </a>
+                              </div>
+                              <div class="content">
+                                <h3>
+                                  <a href="http://google.com">Sustainability</a>
+                                </h3>
+
+                                <p>We recycle 94% of the waste we collect. We offer a reliable sustainable solution. Fly tipping
+                                  incidents in london exceeded 350,000 last year and costs the UK taxpayer £600m a year,
+                                  as well as being unethical we want to stamp this out.</p>
+                              </div>
+                              <!--.info-->
+                            </div>
+                          </div>
+
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="./dist/js/jquery-1.9.1.min.js"></script>
   <script src="./dist/js/bootstrap.min.js"></script>
+  <script src="./js/bootstrapValidator.js"></script>
 </body>
 <script src="./js/time.js"></script>
+<script src="./js/login_re.js"></script>
 
 </html>
