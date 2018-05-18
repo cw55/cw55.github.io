@@ -17,5 +17,22 @@ $(function(){
             window.location.href = home_rul;
         }
     });
+    $("#about").click(function(){
+        alert("sorry，此项功能正在搭建中");
+        // let about_rul = "/index.html";
+        // if(home_rul == re_url){
+        //     window.history(-1);
+        // }else{
+        //     window.location.href = about_rul;
+        // }
+    });
+    $("#other").click(function(){
+        let other_rul = "/demo/lists/list.html";
+        if(home_rul == re_url){
+            window.history(-1);
+        }else{
+            window.location.href = other_rul;
+        }
+    });
 
 })
