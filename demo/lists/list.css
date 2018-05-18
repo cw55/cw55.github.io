@@ -1,3 +1,6 @@
+.lists {
+  min-height: 350px;
+}
 .lists table tbody tr {
   cursor: pointer;
 }
