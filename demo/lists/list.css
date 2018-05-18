@@ -10,9 +10,9 @@ footer {
   color: white;
   padding: 25px 0;
 }
-footer .links {
-  float: right;
-}
 footer .links li {
   display: inline-block;
+}
+footer .right {
+  float: right;
 }
