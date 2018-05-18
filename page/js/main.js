@@ -31,7 +31,7 @@ var wave;
 var dust;
 var dustPic=[];
 var _control=document.querySelector('.control');
-var _btn=document.querySelector('.btn');
+var _btn=document.querySelector('.play_game');
 document.body.onload = function(){
 
     _btn.addEventListener('click',startGame,false);
