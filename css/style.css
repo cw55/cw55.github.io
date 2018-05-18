@@ -159,3 +159,64 @@ body footer {
 body footer .links li {
   display: inline-block;
 }
+body .daohan div {
+  text-align: center;
+}
+body .daohan div img {
+  margin: 0 auto;
+}
+body .title {
+  margin-top: 40px;
+}
+body .title .solid {
+  height: 3px;
+  width: 40px;
+  background-color: #f7931d;
+  margin: 20px auto 35px auto;
+}
+body .daohan {
+  margin-top: 40px;
+}
+body .daohan .service-item {
+  padding: 0 0 35px 0 ;
+  text-align: center;
+}
+body .daohan .service-item h4 {
+  margin-top: -50px;
+  margin-bottom: 40px;
+  padding: 0 35px 35px 35px;
+}
+body .daohan .service-item p {
+  margin: auto;
+  max-width: 160px;
+  line-height: 1.6;
+  text-align: center;
+}
+body .daohan .service-item p i {
+  font-size: 20px;
+}
+body .daohan .service-item .service-icon {
+  position: relative;
+  display: block;
+  text-align: center;
+  width: 120px;
+  height: 120px;
+  margin: 20px auto;
+  font-size: 56px;
+  line-height: 1.3;
+  color: #2F2E2E;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+body .daohan .service-item .fa {
+  -webkit-transform: scale(1);
+  transform: rotate(0);
+  -webkit-transition: all 0.3s ease-out;
+  transition: none;
+}
+body .daohan .service-item:hover .fa {
+  -webkit-transform: scale(1.3);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}

@@ -103,6 +103,9 @@ footer {
     padding: 25px 0;
     margin-top: 80px;
 }
+footer .links {
+    float: right;
+}
 footer .links li {
     display: inline-block;
 }
