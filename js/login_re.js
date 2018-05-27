@@ -1,5 +1,5 @@
 $(function () {
-    $('#myModal2 from').bootstrapValidator({
+    $('#myModal2 form').bootstrapValidator({
         message: 'This value is not valid',
         feedbackIcons: {
             valid: 'glyphicon glyphicon-ok',
