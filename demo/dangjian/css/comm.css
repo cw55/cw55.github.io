@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.juzhong_box {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+a {
+  color: black;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+li {
+  list-style: none;
+}
+body {
+  width: 100%;
+  font-family: "微软雅黑";
+  background: #f5f4f9;
+}
+body .dangjian {
+  width: 100%;
+}
+body .dangjian .header {
+  width: 100%;
+  background: #fff;
+}
+body .dangjian .header .top_left {
+  margin-top: 10px;
+  height: 70px;
+}
+body .dangjian .header .top_left img {
+  float: left;
+  line-height: 70px;
+  width: 60px;
+  height: 60px;
+}
+body .dangjian .header .top_left span {
+  float: left;
+  line-height: 70px;
+  font-size: 32px;
+  color: #d80809;
+  font-weight: bold;
+  margin-left: 10px;
+}
+body .dangjian .header .top_right {
+  margin-top: 10px;
+  height: 70px;
+}
+body .dangjian .header .top_right .runback {
+  border: 1px solid #d80809;
+  border-radius: 6px;
+  width: 100px;
+  height: 30px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 2px;
+  background: #d80809;
+  text-align: center;
+}
+body .dangjian .header .top_right .runback button {
+  margin-top: 5px;
+  font-family: "Times New Roman";
+  outline: none;
+  background: #d80809;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+body .dangjian .header .top_right .search {
+  border: 1px solid #d80809;
+  border-radius: 6px;
+  width: 320px;
+  height: 30px;
+  margin-top: 20px;
+}
+body .dangjian .header .top_right .search input {
+  float: left;
+  line-height: 30px;
+  outline: none;
+  font-size: 16px;
+  width: 200px;
+  border: none;
+  margin-left: 10px;
+}
+body .dangjian .header .top_right .search button {
+  float: right;
+  outline: none;
+  background: #d80809;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  font-size: 16px;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+body .dangjian .nav {
+  background: #d80809;
+  height: 44px;
+  padding-top: 4px;
+}
+body .dangjian .nav .nav_box ul li {
+  display: inline-block;
+  list-style: none;
+  line-height: 44px;
+  color: #fff;
+  width: 100px;
+  text-align: center;
+  cursor: pointer;
+}
+body .dangjian .nav .nav_box ul li:hover {
+  color: red;
+  background: #f5f4f9;
+}
+body .dangjian .footer {
+  background: #e2cccc;
+  margin-top: 10px;
+  position: relative;
+}
+body .dangjian .footer .foot_left {
+  position: absolute;
+  left: 300px;
+  top: 30px;
+}
+body .dangjian .footer .foot_right {
+  padding: 20px 0;
+}
+body .dangjian .footer .foot_right p {
+  text-align: center;
+  line-height: 24px;
+  font-size: 14px;
+}

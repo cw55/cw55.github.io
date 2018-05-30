@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"
+    />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>阖天下</title>
+    <link rel="stylesheet" type="text/css" href="./css/api.css" />
+    <link rel="stylesheet" type="text/css" href="./css/aui.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <style>
+        .aui-bar-tab {
+            background: none;
+        }
+
+        .aui-bar-tab .aui-bar-tab-label {
+            font-size: 1.6rem;
+            color: #fff;
+        }
+
+        .aui-bar-tab .aui-bar-tab-item {
+            height: 4rem;
+        }
+
+        .aui-font-size-20 {
+            font-size: 1.1rem !important;
+        }
+    </style>
+</head>
+
+<body class="t_login1">
+    <div class="aui-bar aui-bar-tab aui-font-size-16">
+        <div class="t_login1_1">
+            <div class="aui-bar-tab-item aui-text-right" tapmode>
+                <div class="aui-bar-tab-label t_dl1">登录</div>
+            </div>
+            <div class="aui-bar-tab-item" tapmode>
+                <div class="aui-bar-tab-label">|</div>
+            </div>
+            <div class="aui-bar-tab-item aui-text-left" tapmode>
+                <div class="aui-bar-tab-label t_zc1">注册</div>
+            </div>
+        </div>
+        <div class="t_login2 t_dl">
+            <ul class="aui-list aui-form-list" style="background:none;width:80%;margin:0px auto;">
+                <li class="aui-list-item" style="padding-left:0;">
+                    <div class="aui-list-item-inner">
+                        <div class="aui-list-item-input">
+                            <input class="aui-font-size-20 aui-padded-t-5" type="text" placeholder="请输入用户名" name="username" id="txtUserName">
+                        </div>
+                    </div>
+                </li>
+                <li class="aui-list-item aui-margin-t-15" style="padding-left:0;">
+                    <div class="aui-list-item-inner">
+                        <div class="aui-list-item-input">
+                            <input class="aui-font-size-20 aui-padded-t-5" type="password" placeholder="请输入密码" name="pwd" id="txtUserPass">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="aui-list aui-list-in t_login3">
+                <li class="aui-list-item">
+                    <div class="aui-list-item-inner">
+                        <div class="aui-btn aui-btn-block" onclick="login()">登录</div>
+                    </div>
+                </li>
+                <li class="aui-list-item aui-pull-right aui-padded-t-0">
+                    <div class="aui-list-item-inner">
+                        <div class="aui-font-size-20" id="forget">忘记密码？</div>
+                    </div>
+                </li>
+                <section class="aui-grid t_login4">
+                    <div class="aui-row">
+                        <h2 class="aui-font-size-20 aui-text-center aui-margin-t-10 font02">
+                            <i class="aui-iconfont aui-icon-minus"></i> 使用其他账号登录
+                            <i class="aui-iconfont aui-icon-minus"></i>
+                        </h2>
+                        <div class="aui-col-xs-4 aui-text-center">
+                            <div class="t_login4_1">
+                                <i class="aui-iconfont aui-icon-wechat"></i>
+                            </div>
+                        </div>
+                        <div class="aui-col-xs-4 aui-text-center">
+                            <div class="t_login4_1">
+                                <i class="aui-iconfont aui-icon-weibo"></i>
+                            </div>
+                        </div>
+                        <div class="aui-col-xs-4 aui-text-center">
+                            <div class="t_login4_1">
+                                <i class="aui-iconfont aui-icon-qq"></i>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </ul>
+        </div>
+        <div class="t_login2 t_zc">
+            <ul class="aui-list aui-form-list" style="background:none;width:80%;margin:0px auto;">
+                <li class="aui-list-item" style="padding-left:0;">
+                    <div class="aui-list-item-inner">
+                        <div class="aui-list-item-input">
+                            <input class="aui-font-size-20" type="text" placeholder="手机号" name="" id="register_phone">
+                        </div>
+                    </div>
+                </li>
+                <li class="aui-list-item aui-margin-t-15 aui-padded-l-0 aui-padded-r-0">
+                    <div class="aui-list-item-inner">
+                        <div class="aui-list-item-input aui-padded-r-0">
+                            <input class="aui-font-size-20 aui-pull-left" type="" placeholder="验证码" name="" style="width:61%;" id="register_sendcode">
+                            <input class="aui-font-size-20 aui-pul-right aui-text-danger" id="sendcode" type="button" name="" value="发送验证码" style="text-align:right;width:39%;">
+                        </div>
+                    </div>
+                </li>
+                <li class="aui-list-item aui-margin-t-15" style="padding-left:0;">
+                    <div class="aui-list-item-inner">
+                        <div class="aui-list-item-input">
+                            <input class="aui-font-size-20" type="password" placeholder="密码" name="" id="register_password">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="aui-list aui-list-in t_login3">
+                <li class="aui-list-item">
+                    <div class="aui-list-item-inner">
+                        <div class="aui-btn aui-btn-block" onclick="register()">注册</div>
+                    </div>
+                </li>
+                <li class="aui-list-item aui-padded-t-0">
+                    <div class="aui-list-item-inner">
+                        <div class="aui-font-size-20">点击注册表示同意《用户手册》</div>
+                    </div>
+                </li>
+                <section class="aui-grid t_login4">
+                    <div class="aui-row">
+                        <h2 class="aui-font-size-20 aui-text-center aui-margin-t-10 font02">
+                            <i class="aui-iconfont aui-icon-minus"></i> 使用其他账号登录
+                            <i class="aui-iconfont aui-icon-minus"></i>
+                        </h2>
+                        <div class="aui-col-xs-4 aui-text-center">
+                            <div class="t_login4_1">
+                                <i class="aui-iconfont aui-icon-wechat"></i>
+                            </div>
+                        </div>
+                        <div class="aui-col-xs-4 aui-text-center">
+                            <div class="t_login4_1">
+                                <i class="aui-iconfont aui-icon-weibo"></i>
+                            </div>
+                        </div>
+                        <div class="aui-col-xs-4 aui-text-center">
+                            <div class="t_login4_1">
+                                <i class="aui-iconfont aui-icon-qq"></i>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </ul>
+        </div>
+
+    </div>
+</body>
+<script type="text/javascript" src="./script/api.js"></script>
+<!-- <script type="text/javascript" src="./script/jquery.cookie.js"></script> -->
+<script type="text/javascript" src="./script/jquery.min.js"></script>
+<script type="text/javascript" src="./script/config.js"></script>
+<script type="text/javascript">
+    // 登录
+    $('.t_dl1').click(function () {
+        $('.t_dl').show();
+        $('.t_zc').hide();
+    })
+    $('.t_zc1').click(function () {
+        $('.t_zc').show();
+        $('.t_dl').hide();
+    })
+</script>
+<script type="text/javascript">
+    apiready = function () {
+        //登陆
+        login = function () {
+            var username = $("#txtUserName").val();
+            var password = $("#txtUserPass").val();
+            // alert(password);
+
+            api.ajax({
+                url: getUrl + '/Login/DoLogin',
+                method: 'post',
+                data: {
+                    values: {
+                        username: username,
+                        password: password
+                    }
+                }
+            }, function (ret, err) {
+                if (ret) {
+                    if (ret.status == 1) {
+                        alert(ret.msg);
+                    } else {
+                        alert(ret.msg);
+                        return;
+                    }
+                    localStorage.setItem("token", ret.result.token);
+                    var token=localStorage.getItem("token");
+
+                    // $.cookie("username", username, { expires: 7 });
+                    // $.cookie("password", password, { expires: 7 });
+                    // window.sessionStorage.setItem("username", username);
+                    // window.sessionStorage.setItem("password", password);
+                    api.openWin({
+                        name: '首页',
+                        url: './html/03/allgood_win.html'
+                    });
+
+                    // api.alert({ msg: JSON.stringify(ret) });
+                } else {
+                    alert(err.msg);
+                    // api.alert({ msg: JSON.stringify(err) });
+                }
+            });
+        }
+        $("#forget").click(function () {
+            api.openWin({
+                name: '修改密码',
+                url: './edit_mm.html',
+                pageParam: {
+                    name: 'test'
+                }
+            });
+
+
+        });
+
+        //获取验证码
+        var session_code = "";
+        var session_phone = "";
+        $("#sendcode").click(function () {
+            var phone = $("#register_phone").val();
+            var phone_val = isphone(phone);
+            if (phone_val == false) {
+                return
+            }
+            api.ajax({
+                url: getUrl + '/Register/sendCode',
+                method: 'post',
+                data: {
+                    values: {
+                        phone: phone
+                    }
+                }
+            }, function (ret, err) {
+                if (ret) {
+                    session_code = ret.session_code;
+                    session_phone = ret.session_phone;
+                    if (ret.status == "-1") {
+                        alert(ret.msg);
+                    }
+
+                    //锁定手机号
+                    // $("#register_phone").attr("readonly","readonly");
+                    // api.alert({ msg: JSON.stringify(ret) });
+                } else {
+                    // api.alert({ msg: JSON.stringify(err) });
+                }
+            });
+        });
+
+        register = function () {
+            var password = $("#register_password").val();
+            var phone = $("#register_phone").val();
+            var register_sendcode = $("#register_sendcode").val();
+            if (password == "") {
+                alert("密码不能为空");
+                return;
+            }
+            api.ajax({
+                url: getUrl + '/Register/checkCode',
+                method: 'post',
+                data: {
+                    values: {
+                        session_code: session_code,
+                        code: register_sendcode,
+                        session_phone: session_phone,
+                        phone: phone,
+                        pass: password
+                    }
+                }
+            }, function (ret, err) {
+                if (ret) {
+                    if (ret.status == 1) {
+                        alert(ret.msg);
+                    } else {
+                        alert(ret.msg);
+                        return;
+                    }
+                    $('.t_dl').show();
+                    $('.t_zc').hide();
+                    //清空数据
+                    $("#register_password").val("");
+                    $("#register_phone").val("");
+                    $("#register_sendcode").val("");
+                    // api.alert({ msg: JSON.stringify(ret) });
+                } else {
+                    alert(err.msg);
+                    // api.alert({ msg: JSON.stringify(err) });
+                }
+            });
+
+        }
+
+        function isphone(sjh) {
+            var myreg = /^[1][3,4,5,7,8,9][0-9]{9}$/;
+            if (!myreg.test(sjh)) {
+                alert('请输入有效的手机号码！');
+                return false;
+            }
+            return true;
+        }
+    }
+
+</script>
+
+</html>

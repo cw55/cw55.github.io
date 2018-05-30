@@ -1,0 +1,21 @@
+.tongji .juzhong_box {
+  background: #fff;
+}
+.tongji .juzhong_box .tongji_juzhong {
+  border: 1px solid #F0F0F0;
+  width: 880px;
+}
+.tongji .juzhong_box .tongji_juzhong:nth-child(1) {
+  margin: 60px auto 20px;
+}
+.tongji .juzhong_box .tongji_juzhong:nth-child(2) {
+  margin: 20px auto 60px;
+}
+.tongji .juzhong_box #main {
+  width: 880px;
+  height: 270px;
+}
+.tongji .juzhong_box #main1 {
+  width: 880px;
+  height: 270px;
+}

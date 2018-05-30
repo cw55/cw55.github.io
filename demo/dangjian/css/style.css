@@ -1,0 +1,212 @@
+.content {
+  margin-top: 10px;
+}
+.content .content_img {
+  position: relative;
+  margin-top: 10px;
+}
+.content .content_img img {
+  width: 500px;
+  height: 370px;
+  display: block;
+}
+.content .content_img .mask {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 500px;
+}
+.content .content_img .mask p {
+  height: 50px;
+  line-height: 50px;
+  background: rgba(0, 0, 0, 0.2);
+  text-indent: 14px;
+  color: #fff;
+}
+.content .zuzhi_admin {
+  margin-top: 10px;
+}
+.content .xinwen {
+  width: 680px;
+  margin: 10px 0;
+}
+.content .xinwen .xinwen_list {
+  padding: 10px 0;
+  border-left: 1px solid #F0F0F0;
+  border-right: 1px solid #F0F0F0;
+  border-bottom: 1px solid #F0F0F0;
+}
+.content .xinwen .xinwen_list ul li {
+  height: 30px;
+  line-height: 30px;
+  list-style: none;
+}
+.content .xinwen .xinwen_list ul li a {
+  text-indent: 20px;
+  width: 500px;
+  height: 30px;
+  float: left;
+  overflow: hidden;
+  font-size: 14px;
+}
+.content .xinwen .xinwen_list ul li span {
+  float: right;
+  font-size: 14px;
+  color: #666666;
+  margin-right: 10px;
+}
+.content .xinwen .xinwen_list ul li:hover {
+  background: #eee;
+}
+.content .zuzhi_box {
+  margin: 20px 0;
+  background: url('../images/bg_zuzhi.png') no-repeat;
+  height: 220px;
+}
+.content .zuzhi_box .swiper-container {
+  padding: 10px 0;
+}
+.content .zuzhi_box .swiper-container .swiper-wrapper div img {
+  line-height: 220px;
+}
+.advert_box {
+  margin: 10px 0;
+  width: 100%;
+  background: url('../images/bg_advert.png') no-repeat;
+}
+.content_2 .zaixian_study {
+  width: 590px;
+  float: left;
+}
+.content_2 .zaixian_study .xw_header ul li {
+  width: 100px;
+}
+.content_2 .zaixian_study .xw_header ul li:hover {
+  background: url("../images/xinwen.png") no-repeat;
+  background-size: 100px 50px;
+  color: #fff;
+  z-index: 33;
+}
+.content_2 .zaixian_study .content_xw {
+  border-left: 1px solid #F0F0F0;
+  border-right: 1px solid #F0F0F0;
+  border-bottom: 1px solid #F0F0F0;
+}
+.content_2 .zaixian_study .content_xw .con_top {
+  padding: 10px;
+  overflow: hidden;
+}
+.content_2 .zaixian_study .content_xw .con_top .con_text {
+  width: 420px;
+  height: 126px;
+  overflow: hidden;
+}
+.content_2 .zaixian_study .content_xw .con_top .con_text p:nth-child(1) {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 6px;
+}
+.content_2 .zaixian_study .content_xw .con_top .con_text p:nth-child(2) {
+  text-indent: 20px;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666666;
+  line-height: 24px;
+}
+.content_2 .zaixian_study .content_xw .con_list {
+  margin: 10px;
+}
+.content_2 .zaixian_study .content_xw .con_list ul li {
+  list-style: none;
+  height: 26px;
+  line-height: 26px;
+}
+.content_2 .zaixian_study .content_xw .con_list ul li a {
+  float: left;
+  font-size: 14px;
+}
+.content_2 .zaixian_study .content_xw .con_list ul li span {
+  color: #666;
+  float: right;
+  font-size: 14px;
+}
+.content_2 .lvzhi {
+  float: right;
+}
+.huodong {
+  margin-top: 20px;
+}
+.huodong .huodong_left {
+  float: left;
+  width: 754px;
+  margin-top: 8px;
+}
+.huodong .huodong_left .huodong_con {
+  border: 1px solid #F0F0F0;
+  overflow: hidden;
+}
+.huodong .huodong_left .huodong_con .huodong_tab {
+  float: left;
+  margin: 30px 10px;
+}
+.huodong .huodong_left .huodong_con .huodong_tab img {
+  display: block;
+}
+.huodong .huodong_left .huodong_con .huodong_tab p:nth-child(2) {
+  font-size: 14px;
+  font-weight: bold;
+}
+.huodong .huodong_left .huodong_con .huodong_tab p:nth-child(3) {
+  font-size: 12px;
+}
+.huodong .huodong_right {
+  float: right;
+  width: 426px;
+  overflow: hidden;
+}
+.huodong .huodong_right .right_tab {
+  cursor: pointer;
+  float: left;
+  margin: 8px;
+  opacity: 1;
+}
+.huodong .huodong_right .right_tab img {
+  display: block;
+}
+.huodong .huodong_right .right_tab:hover {
+  opacity: 0.8;
+}
+.xinwen_head {
+  height: 50px;
+  line-height: 50px;
+  overflow: hidden;
+  background: #f0f0f0;
+}
+.xinwen_head .xw_header span {
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 10px;
+  float: left;
+}
+.xinwen_head .xw_header ul li {
+  list-style: none;
+  width: 121px;
+  height: 50px;
+  float: left;
+  text-align: center;
+  color: black;
+  cursor: pointer;
+}
+.xinwen_head .xw_header ul li:hover {
+  background: url("../images/xinwen.png") no-repeat;
+  color: #fff;
+  z-index: 33;
+}
+.xinwen_head .xinwen_more {
+  float: right;
+  margin-right: 10px;
+}
+.xinwen_head .xinwen_more a {
+  font-size: 14px;
+  color: #acacac;
+}
