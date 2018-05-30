@@ -1,18 +1,18 @@
 $(function(){
     //模拟ajax获取数据
     var ret = [
-        ["canvas制作小游戏demo","2017-11-30"],
-        ["跳转页面打印方法研究","2017-12-17"],
-        ["小风车页面","2016-08-11"]
+        ["canvas","canvas制作小游戏demo","2017-11-30"],
+        ["print","跳转页面打印方法研究","2017-12-17"],
+        ["xiaofenche","小风车页面","2016-08-11"]
     ];
     var tr = "";
     for(var i=0;i<ret.length;i++){
-        tr+=`<tr data-id="canvas">
-            <td>${ret[i][0]}</td>
+        tr+=`<tr data-id="${ret[i][0]}">
             <td>${ret[i][1]}</td>
+            <td>${ret[i][2]}</td>
         </tr>`;
     }
-    $(".lists table tbody tr").append(tr);
+    $(tr).appendTo(".lists table tbody");
 
     //模拟地址数据
     var data_url = {
