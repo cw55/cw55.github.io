@@ -6,6 +6,7 @@ $(function(){
         ["xiaofenche","小风车页面","2016-08-11"],
         ["dangjian","湖北党建官网","2018-05-23"],
         ["hetianxia","阖天下黄金手机APP","2018-05-24"],
+        ["photo","照片墙show time","2018-06-20"],
     ];
     var tr = "";
     ret.sort(function(a,b){
@@ -25,7 +26,8 @@ $(function(){
         "print":"/page/index.html",
         "xiaofenche":"/xiaofenche.html",
         "dangjian":"/demo/dangjian/index.html",
-        "hetianxia":"/demo/hetianxia/login.html"
+        "hetianxia":"/demo/hetianxia/login.html",
+        "photo":"/demo/photo/photo.html"
     }
     $(".lists table tbody tr").on('click',function() {
         let data_id = $(this).attr("data-id");
