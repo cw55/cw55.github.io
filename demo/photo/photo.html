@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>你想的都很美</title>
+	<link rel="icon" href="../../favicon.ico" type="image/x-icon" />
+	<!-- Bootstrap -->
+	<link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/photo.css" />
+
+	<!--[if lt IE 9]>
+    <script src="http://apps.bdimg.com/libs/html5shiv/r29/html5.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+	<style type="text/css">
+		.photo {
+			margin: 20px 0 0 0;
+			width: 98%;
+			padding: 0;
+		}
+
+		.photo li {
+			margin-bottom: 20px;
+			text-align: center;
+		}
+
+		footer {
+			background-color: #333;
+			font-size: 14px;
+			color: white;
+			padding: 25px 0;
+		}
+
+		footer .links li {
+			display: inline-block;
+		}
+
+		footer .right {
+			float: right;
+		}
+	</style>
+
+</head>
+
+<body>
+	<!-- 导航栏 -->
+	<nav class="navbar navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+				 aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">我的工具箱</a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="javascript:void(0)" id="home">主页</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)" id="about">关于</a>
+					</li>
+					<li class="active">
+						<a href="javascript:void(0)" id="other">其他技术</a>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav pull-right">
+					<li class="dropdown pull-right">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">用户
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="#" data-toggle="modal" data-target="#myModal">登录</a>
+							</li>
+							<li>
+								<a href="#" data-toggle="modal" data-target="#myModal2">注册</a>
+							</li>
+							<li>
+								<a href="#">游客试用</a>
+							</li>
+							<li role="separator" class="divider"></li>
+							<!-- <li class="dropdown-header">关于我</li> -->
+							<li>
+								<a href="#">联系地址</a>
+							</li>
+							<li>
+								<a href="#">一个分离的链接</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</nav>
+	<!-- 模态框 -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title" id="myModalLabel">欢迎登录</h4>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="exampleInputEmail1">name</label>
+							<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+						</div>
+						<div class="form-group">
+							<label for="exampleInputPassword1">密码</label>
+							<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+						</div>
+						<!-- <div class="form-group">
+					  <label for="exampleInputFile">File input</label>
+					  <input type="file" id="exampleInputFile">
+					  <p class="help-block">Example block-level help text here.</p>
+					</div> -->
+						<!-- <div class="checkbox">
+					  <label>
+						<input type="checkbox"> Check me out
+					  </label>
+					</div> -->
+						<button type="submit" class="btn btn-default">登录</button>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">返回首页</button>
+					<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title" id="myModalLabe2">欢迎注册</h4>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="exampleInputEmail2">name</label>
+							<input type="text" class="form-control" name="name2" id="name2" placeholder="Name">
+						</div>
+						<div class="form-group">
+							<label for="exampleInputEmail2">邮箱/手机号</label>
+							<input type="email" class="form-control" name="exampleInputEmail2" placeholder="Email">
+						</div>
+						<div class="form-group">
+							<label for="exampleInputPassword2">密码</label>
+							<input type="password" class="form-control" name="exampleInputPassword2" placeholder="Password">
+						</div>
+						<div class="form-group">
+							<label for="exampleInputPassword2">确认密码</label>
+							<input type="password" class="form-control" name="exampleInputPassword2_again" placeholder="Again Password">
+						</div>
+						<!-- <div class="form-group">
+					  <label for="exampleInputFile">File input</label>
+					  <input type="file" id="exampleInputFile">
+					  <p class="help-block">Example block-level help text here.</p>
+					</div> -->
+						<!-- <div class="checkbox">
+					  <label>
+						<input type="checkbox"> Check me out
+					  </label>
+					</div> -->
+						<button type="submit" class="btn btn-default">注册并登录</button>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">返回首页</button>
+					<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<ul id="lightgallery" class="photo list-unstyled">
+		<li data-src="images/home_1.png" class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+			<a href="">
+				<img src="images/home_1.png" width="100%" class="vcenter">
+			</a>
+		</li>
+		<li data-src="images/home_2.png" class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+			<a href="">
+				<img src="images/home_2.png" width="100%">
+			</a>
+		</li>
+		<li data-src="images/home_3.png" class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+			<a href="">
+				<img src="images/home_3.png" width="100%">
+			</a>
+		</li>
+		<li data-src="images/home_4.png" class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+			<a href="">
+				<img src="images/home_4.png" width="100%">
+			</a>
+		</li>
+		<li data-src="images/home_5.png" class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+			<a href="">
+				<img src="images/home_5.png" width="100%">
+			</a>
+		</li>
+		<li data-src="images/home_6.png" class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+			<a href="">
+				<img src="images/home_6.png" width="100%">
+			</a>
+		</li>
+		<li data-src="images/home_7.png" class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+			<a href="">
+				<img src="images/home_7.png" width="100%">
+			</a>
+		</li>
+		<li data-src="images/home_8.png" class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+			<a href="">
+				<img src="images/home_8.png" width="100%">
+			</a>
+		</li>
+		<li data-src="images/home_9.png" class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+			<a href="">
+				<img src="images/home_9.png" width="100%">
+			</a>
+		</li>
+		<li data-src="images/news1.png" class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+			<a href="">
+				<img src="images/news1.png" width="100%">
+			</a>
+		</li>
+		<li data-src="images/news2.png" class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+			<a href="">
+				<img src="images/news2.png" width="100%">
+			</a>
+		</li>
+		<li data-src="images/news3.png" class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+			<a href="">
+				<img src="images/news3.png" width="100%">
+			</a>
+		</li>
+		<li data-src="images/news4.png" class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+			<a href="">
+				<img src="images/news4.png" width="100%">
+			</a>
+		</li>
+		<li data-src="images/news5.png" class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+			<a href="">
+				<img src="images/news5.png" width="100%">
+			</a>
+		</li>
+		<li data-src="images/show1.png" class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+			<a href="">
+				<img src="images/show1.png" width="100%">
+			</a>
+		</li>
+		<li data-src="images/show2.png" class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+			<a href="">
+				<img src="images/show2.png" width="100%">
+			</a>
+		</li>
+		<li data-src="images/tra_x1.png" class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+			<a href="">
+				<img src="images/tra_x1.png" width="100%">
+			</a>
+		</li>
+		<li data-src="images/tra_x2.png" class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+			<a href="">
+				<img src="images/tra_x2.png" width="100%">
+			</a>
+		</li>
+		<li data-src="images/tra_x3.png" class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+			<a href="">
+				<img src="images/tra_x3.png" width="100%">
+			</a>
+		</li>
+		<li data-src="images/tra_x4.png" class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+			<a href="">
+				<img src="images/tra_x4.png" width="100%">
+			</a>
+		</li>
+
+
+	</ul>
+	<footer role="contentinfo">
+		<div class="container">
+			<div class="row">
+				<div class="left col-md-7">
+					<ul class="links">
+						<li>
+							<span class="message">期待再次遇见。</span>
+						</li>
+						<li>
+							<a href="#" aria-hidden="true" role="button" tabindex="0">cw55 &copy;</a>
+						</li>
+					</ul>
+				</div>
+				<div class="right col-md-5">
+					<ul class="links right">
+						<li>
+							<a id="footer-support-link" href="#" target="_blank">支持</a>
+						</li>
+						<li>
+							<a id="footer-privacy-link" href="#" target="_blank">隐私</a>
+						</li>
+						<li>
+							<a id="footer-terms-link" href="#" target="_blank">使用条款</a>
+						</li>
+						<li>
+							<a id="footer-license-link" href="#">执照</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="../../dist/js/jquery-1.9.1.min.js"></script>
+
+	<!--瀑布流-->
+	<script src="js/masonry.pkgd.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(window).load(function () {
+			$('#lightgallery').masonry({
+				itemSelector: 'li',
+			});
+		})
+	</script>
+	<script src="../../dist/js/bootstrap.min.js"></script>
+	<!--相册-->
+	<script src="js/jquery.mousewheel.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/lightgallery-all.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/lg-thumbnail.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/lg-fullscreen.js" type="text/javascript" charset="utf-8"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("#lightgallery").lightGallery();
+		});
+	</script>
+
+
+</body>
+<script src="../../js/common.js"></script>
+
+</html>
