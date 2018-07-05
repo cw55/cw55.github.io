@@ -120,6 +120,7 @@ $(function () {
 		ul1 += '<li><a href="court_travel.html?add=' + i + '">' + ul_arr[i] + '</a></li>';
 	}
 	$(ul1).appendTo("#ul_arr");
+	$(ul1).appendTo(".footer_ul");
 });
 
 
