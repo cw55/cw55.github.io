@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/datetimepicker.css">
+    <link rel="stylesheet" href="../css/list.css">
+
+</head>
+
+<body>
+    <div class="my_list">
+        <div class="nav">
+            <div class="nav_title">
+                <span>用车申请</span>
+            </div>
+            <div class="nav_btn">
+                <button id="xinzen">增加</button>
+                <!-- <button>查看</button> -->
+                <button class="back_shouye">返回</button>
+            </div>
+        </div>
+        <div class="zhushi">
+            <span>注:开始时间/申请人/车类型/目的地/用车事由/结束时间</span>
+        </div>
+        <div class="list">
+            <!-- <div class="list_box" data-list="list1">
+                <div class="left">
+                    <span>1、</span>
+                </div>
+                <div class="right">
+                    <p>
+                        <span>2018-08-02 周秦汉 商务车 业务 2018-08-12</span>
+                    </p>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <div class="xiangqing" style="display: none;" data-zt="">
+        <div class="xiangqing_title">
+            <div class="left">
+                <span>用车申请</span>
+            </div>
+            <div class="right">
+                <button id="queding">确定</button>
+                <button id="quxiao">取消</button>
+            </div>
+        </div>
+        <div class="xq_content">
+
+        </div>
+        <!-- <div class="footer">
+            <div class="footer_left">
+                <span>操作</span>
+            </div>
+            <div class="footer_right">
+                <button id="queding">确定</button>
+                <button id="quxiao">取消</button>
+            </div>
+        </div> -->
+    </div>
+</body>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-datetimepicker.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/list_yc.js"></script>
+<script>
+    //日期插件
+    $(".xq_content").delegate('.form_datetime', "focus", function () {
+        $(this).datetimepicker({
+            language: 'zh-cn',
+            minView: "month",//设置只显示到月份
+            format: "yyyy-mm-dd",//日期格式
+            autoclose: true,//选中关闭
+            todayBtn: true//今日按钮
+        });
+    });
+</script>
+
+</html>

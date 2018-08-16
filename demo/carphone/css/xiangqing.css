@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.xiangqing {
+  height: 100%;
+}
+.xiangqing .xiangqing_title {
+  width: 100%;
+  background: #2266ca;
+  padding: 0.4rem;
+  color: #fff;
+  font-weight: bold;
+}
+.xiangqing .xq_content {
+  margin-top: 1rem;
+}
+.xiangqing .xq_content ul li {
+  list-style: none;
+  margin: 0.4rem 0;
+}
+.xiangqing .xq_content ul li input,
+.xiangqing .xq_content ul li select,
+.xiangqing .xq_content ul li textarea {
+  display: inline-block;
+  width: 74%;
+  margin-left: 2%;
+}
+.xiangqing .xq_content ul li span {
+  display: inline-block;
+  width: 20%;
+  text-align: right;
+}
+.xiangqing .xq_content ul li input {
+  border: 1px solid #bbb8b8;
+  text-indent: 0.4rem;
+}
+.xiangqing .xq_content ul li select {
+  border: 1px solid #bbb8b8;
+}
+.xiangqing .xq_content ul li textarea {
+  border: 1px solid #bbb8b8;
+}
+.xiangqing .footer {
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: -2px 0 2px #666;
+  padding: 0.4rem 0;
+}
+.xiangqing .footer .footer_left {
+  float: left;
+  margin-left: 2%;
+}
+.xiangqing .footer .footer_right {
+  float: right;
+}
+.xiangqing .footer .footer_right button {
+  border: none;
+  outline: none;
+  display: inline-block;
+  padding: 0.2rem 0.8rem;
+  color: #fff;
+  background: #f51a1a;
+}

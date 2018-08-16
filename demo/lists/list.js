@@ -8,6 +8,7 @@ $(function(){
         ["hetianxia","阖天下黄金手机APP","2018-05-24"],
         ["photo","照片墙show time","2018-06-20"],
         ["yuesoft","南京阅软信息技术有限公司官网","2018-07-04"],
+        ["carphone","手机端车辆管理demo","2018-08-16"],
     ];
     var tr = "";
     ret.sort(function(a,b){
@@ -29,7 +30,8 @@ $(function(){
         "dangjian":"/demo/dangjian/index.html",
         "hetianxia":"/demo/hetianxia/login.html",
         "yuesoft":"/demo/yuesoft/index.html",
-        "photo":"/demo/photo/photo.html"
+        "photo":"/demo/photo/photo.html",
+        "carphone":"/demo/carphone/index.html"
     }
     $(".lists table tbody tr").on('click',function() {
         let data_id = $(this).attr("data-id");
