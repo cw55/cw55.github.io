@@ -9,6 +9,7 @@ $(function(){
         ["photo","照片墙show time","2018-06-20"],
         ["yuesoft","南京阅软信息技术有限公司官网","2018-07-04"],
         ["carphone","手机端车辆管理demo","2018-08-16"],
+        ["angularForm","angular表单验证","2018-09-07"],
     ];
     var tr = "";
     ret.sort(function(a,b){
@@ -31,7 +32,8 @@ $(function(){
         "hetianxia":"/demo/hetianxia/login.html",
         "yuesoft":"/demo/yuesoft/index.html",
         "photo":"/demo/photo/photo.html",
-        "carphone":"/demo/carphone/index.html"
+        "carphone":"/demo/carphone/index.html",
+        "angularForm":"/demo/angularForm/index.html"
     }
     $(".lists table tbody tr").on('click',function() {
         let data_id = $(this).attr("data-id");
